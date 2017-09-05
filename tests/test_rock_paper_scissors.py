@@ -1,11 +1,11 @@
 import unittest
 
-from src import game
+from src.rock_paper_scissors import RockPaperScissorsGame
 
 class TestGame(unittest.TestCase):
 
     def setUp(self):
-        self.game = game.RockPaperScissorsGame()
+        self.game = RockPaperScissorsGame()
 
     def test_rock_beats_scissors(self):
         assert self.game.beats("rock", "scissors") == True
